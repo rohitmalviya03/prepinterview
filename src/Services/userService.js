@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let BASE_URL='http://54.237.194.7:8080/api/users';
+let BASE_URL='http://127.0.0.1:8080/api/users';
 export const signUp=(user)=>{
     
     return axios.post(BASE_URL+'/savecandidate',user)
@@ -55,6 +55,6 @@ export const getOrder=(userId)=>{
 
 export const getProductbyId=(pId)=>{
     
-    return axios.get('http://54.237.194.7:8080/api/users/getproductbyid/'+pId)
+    return axios.get('http://127.0.0.1:8080/api/users/getproductbyid/'+pId)
 
 };

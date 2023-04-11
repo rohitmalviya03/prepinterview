@@ -1,16 +1,13 @@
 import axios from 'axios';
-
-import React ,{ useEffect,useRef, useState  }from 'react';
+import React ,{ useEffect, useState  }from 'react';
 import { Link,useNavigate  } from 'react-router-dom';
 import { setUserSession } from '../Services/AuthService';
 export default function Login(props) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const[session ,setSession]=useState("sdfsdf");
-  const [currentUser, setCurrentUser] = useState("");
+  
+  
   const [loading, setLoading] = useState(false);
  const navigate=useNavigate();
- const videoRef = useRef(null);
-
+ 
   const [error, setError] = useState(null);
 
   const [user ,setUser]  = useState({
@@ -36,7 +33,7 @@ export default function Login(props) {
   data.append('password',user.password);
  console.log("dad",data);
 
-  axios.post('http://54.237.194.7:8080/api/users/authenticate', { email: user.email, password: user.password },{
+  axios.post('http://127.0.0.1:8080/api/users/authenticate', { email: user.email, password: user.password },{
    
   } 
   
@@ -116,16 +113,16 @@ export default function Login(props) {
                        </div></div></div>          */}
 
 
+
 <section className="py-5">
                 <div className="container px-5">
                   
                     <div className="bg-light rounded-4 py-5 px-4 px-md-5">
                         <div className="text-center mb-5">
                             <div className="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                            <h1 className="fw-bolder">Candidate Login</h1>
+                            <h1 className="fw-bolder">Candidate Registration</h1>
                             <div className="badge bg-gradient-primary-to-secondary text-white mb-4"><div className="text-uppercase">Practice  &middot; Perfect &middot; Perform</div></div>
-                               
-                        </div>
+                                 </div>
                         <div className="row gx-5 justify-content-center">
                             <div className="col-lg-8 col-xl-6">
                        <form onSubmit={handleSubmit} id="contactForm" data-sb-form-api-token="API_TOKEN">
