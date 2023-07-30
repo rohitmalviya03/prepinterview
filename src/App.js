@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/NavBar';
 import Dash from './components/Dashboard';
 import Login from './components/Login';
-
+import UserManual from './components/UserManual';
 import CandidateDashboard from './components/CandidateDashboard';
 import {
   BrowserRouter as Router,
@@ -30,6 +30,7 @@ function App() {
 <Route path='registration' element={<CandidateReg/>} />
 <Route path='login' element={<Login/>} />
 <Route path='userdashboard' element={<CandidateDashboard/>} />
+<Route path='usermanual' element={<UserManual/>} />
 
 </Routes>
 </div>

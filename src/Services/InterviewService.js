@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let BASE_URL='http://54.237.194.7/api/users';
+let BASE_URL='http://54.172.172.27:8083/api/users';
 
 export const getQuestions=(lang)=>{
     const res=axios.get(BASE_URL+'/getquestion/'+lang)
