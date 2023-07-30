@@ -55,6 +55,6 @@ export const getOrder=(userId)=>{
 
 export const getProductbyId=(pId)=>{
     
-    return axios.get('https://54.172.172.27:8083/api/users/getproductbyid/'+pId)
+    return axios.get('http://54.172.172.27:8083/api/users/getproductbyid/'+pId)
 
 };
