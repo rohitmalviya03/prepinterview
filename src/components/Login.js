@@ -48,8 +48,8 @@ export default function Login(props) {
 })
 .catch(error => {
   setLoading(false);
-  if (error.response.status === 401) setError("Email Id or Password is incorrect. Please check your Email and password and try again.");
-  else if(error.response.status === 500) setError("We're sorry, but the user account you are trying to access does not exist. ");
+  if (error.response === 401) setError("Email Id or Password is incorrect. Please check your Email and password and try again.");
+  else if(error.response === 500) setError("We're sorry, but the user account you are trying to access does not exist. ");
   else setError("Something went wrong. Please try again later.");
   console.error('Error occurred while submitting form data:', error);
 });
