@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let BASE_URL='http://54.172.172.27:8080/api/users';
+let BASE_URL='http://54.172.172.27:8083/api/users';
 export const signUp=(user)=>{
     
     return axios.post(BASE_URL+'/savecandidate',user)
