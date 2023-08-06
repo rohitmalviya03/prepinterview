@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let BASE_URL='https://54.172.172.27:8083/api/users';
+let BASE_URL='https://prep4interview.online/api/users';
 export const signUp=(user)=>{
     
     return axios.post(BASE_URL+'/savecandidate',user)
@@ -55,6 +55,6 @@ export const getOrder=(userId)=>{
 
 export const getProductbyId=(pId)=>{
     
-    return axios.get('https://54.172.172.27:8083/api/users/getproductbyid/'+pId)
+    return axios.get('https://prep4interview.online/api/users/getproductbyid/'+pId)
 
 };

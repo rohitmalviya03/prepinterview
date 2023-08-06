@@ -1,6 +1,6 @@
 import axios from "axios";
 
-let BASE_URL='http://54.172.172.27:8083/api/users';
+let BASE_URL='https://prep4interview.online/api/users';
 
 export const getQuestions=(lang)=>{
     const res=axios.get(BASE_URL+'/getquestion/'+lang)
